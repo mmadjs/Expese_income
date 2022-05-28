@@ -1,3 +1,7 @@
+body{
+  background-color: grey;
+}
+
 .App{
   display: flex;
   justify-content: center;
@@ -7,16 +11,17 @@
   margin-top: 100px;
 }
 .main-EXpense{
+  background-color: #cbd5e1;
+
   width: 500px;
   display: flex;
   flex-direction: column;
   /* background-color: blueviolet; */
-  height: 200px;
+  height: 500px;
   /* background-color: blueviolet; */
 }
 .top-section{
   display: flex;
-  border: 1px solid red;
   justify-content: space-evenly;
   width: 100%;
 }
@@ -32,25 +37,70 @@ form{
   display: flex;
   flex-direction: column;
   margin: 20px;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  height: 100%;
 
 }
+input{
+    border: 1px solid #ccc;
+    padding: 9px;
+    width: 100%;
+    border-radius: 10px;
+}
+input:focus{
+  color: #1d4ed8 ;
+}
 
-.top-section button{
-  border: none;
-  border-radius: 50%;
-  background-color: rgb(7, 220, 228);
+.btn{
+  margin-top: 20px;
+  border: 1px solid blue;
+  background-color: rgba(25, 33, 139, 0.445);
   cursor: pointer;
   font-size: large;
   font-weight: 600;
-  color:rgb(189, 12, 180);
-}
+  color:rgb(19, 4, 18);
+  height: 50%;
+  text-align: center;
+  margin: 40px 20px 0 0 ;
+  padding: 10px;
+  border-radius: 10%;
+  
 
+}
 .input-radio{
   display: flex;
-  
+  margin-left: 10px;
+  width: 50%;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
 }
+input[type="radion"]{
+  margin: 10px;
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+
+
+}
+.input-radio label{
+  font-weight: 500;
+  font-size: 20px;
+  cursor: pointer;
+   
+}
+.cancel{
+  border: 1px solid #ef4444;
+  background-color: #fff;
+  color: #ef4444;
+}
+.open{
+  border: 1px solid #4ade80;
+  background-color: #fff;
+  color: #4ade80;
+}
+
 .top-section p{
   background-color: blueviolet;
   padding: 20px;
@@ -59,11 +109,50 @@ form{
   font-size: 1.5rem;
 }
 .bottom-section p{
-  border: 1px solid black;
-  padding: 10px;
+  border: 1px solid 
+  #fde047;
+  background-color: #fef08a;
+  padding: 10px 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 10px;
+  width: 100%;
+  font-weight: 500;
 
+
+}
+.bottom-section span{
+  border-top: 1px solid black;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.button-action{
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 10px;
+  border: 1px solid #1d4ed8;
+  font-weight: 600;
+  background-color: #60a5fa;
+}
+.button-action:hover{
+  background-color: 
+  #1d4ed8
+  ;
+  color: #fde047;
+}
+
+.transaction{
+  background-color: 
+  #9ca3af;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
 }

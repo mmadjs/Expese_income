@@ -7,16 +7,17 @@ const OverviewComponent = ({ income, expense ,addTranseAction,formValue}) => {
   return (
     <>
       <div className="top-section">
-        <button   onClick={() => setisShow(!isShow)}>
-          {isShow ? "خارج شدن" : " حساب کتاب"}
+        <button   onClick={() => setisShow(!isShow)} 
+        className={`btn ${isShow ? "cancel":"open"}`} >
+          {isShow ? "خارج شدن" : "  شروع کردن"}
         </button>
         <p>  {income - expense}$ :موجودی</p>
 
       </div>
-      {isShow && <TransActionForm addTranseAction={addTranseAction}  />}
+      {isShow && <TransActionForm addTranseAction={addTranseAction} setIsshow={setisShow} />}
       <div className="bottom-section">
-        <p>مخارج: <span>{expense}</span> </p>
-        <p>درآمد: <span>{income}</span></p>
+        <p >مخارج <span style={{color:'red'}} >{expense}$</span> </p>
+        <p>درآمد <span style={{color:'green'}}>{income}$</span></p>
       </div>
     </>
   );
