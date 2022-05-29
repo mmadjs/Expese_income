@@ -156,3 +156,8 @@ input[type="radion"]{
   display: flex;
   justify-content: space-between;
 }
+
+input.search{
+  margin: 10px;
+  width: auto;
+}

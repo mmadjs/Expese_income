@@ -18,6 +18,7 @@ const TransActionForm = ({addTranseAction,setIsshow}) => {
         setIsshow(false)
       }
     return ( <form onSubmit={submitHandler}>
+
         <input
           type="text"
           name="desc"
@@ -28,9 +29,11 @@ const TransActionForm = ({addTranseAction,setIsshow}) => {
         <input
           type="number"
           name="amount"
-          placeholder="مفدار"
+          placeholder="هزینه"
           onChange={chngeHandler}
-          value={formValue.amount}
+          value={formValue.amount.value}
+          min='0'
+          
         />
         <div className="input-radio">
           <input
